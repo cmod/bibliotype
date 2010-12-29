@@ -6,7 +6,10 @@
 
 
     $(document).ready(function() {
-      
+
+      // --------------------------------------
+      // Setup hyphenator
+      //      
       Hyphenator.config({
               displaytogglebox : true,
               classname: 'body_text',
@@ -22,8 +25,21 @@
                         }
                 }
       });
-      Hyphenator.run();
+      //Hyphenator.run();
       
+      // --------------------------------------
+      // Swipe Right to reload the page 
+      // (great for quick debugging)
+      //
+      $('body').addSwipeEvents().
+        bind('swiperight', function(evt, touch) {
+          window.location.reload();
+      });
+
+
+      // --------------------------------------
+      // Doubletap to show / hide menu
+      //
       $('body').addSwipeEvents().
         bind('doubletap', function(evt, touch) {
           $('menu').slideToggle('fast', function() {
@@ -31,11 +47,16 @@
           });
       });
 
+
+      // --------------------------------------
+      // Doubleclick to show menu on desktop
+      //
       $(document).bind('dblclick', function(){
         $('menu').slideToggle('fast', function() {
             // Animation complete.
           });
       });
+
 
       // -------------------------------------
       // Size toggles
