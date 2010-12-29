@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Longform Base Typography for Tablets</title>
+  <title>Bibliotype — Longform Base Typography for Tablets</title>
 
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -14,7 +14,7 @@
 
 </head>
 
-<body class="low georgia">
+<body class="low georgia bg_grid">
 
   <div id="menu_wrap">
     <menu>
@@ -65,13 +65,13 @@
       <div id="title_block">
         <h2>SECTION 15</h2>
         <h3>Concerning a Stranger from Spaceland</h3>
+        <img src="images/flatland-illustration.png" alt="Flatland title illustration" />
       </div>
       
       <p class="fp"><span class="sc">From dreams</span> I proceed to facts.</p>
 
       <p>It was the last day of our 1999<sup>th</sup> year of our era.  The patterning of
-      the rain had long ago announced nightfall; and I was sitting <em>(footnote
-      3)</em> in the company of my wife, musing on the events of the past and the
+      the rain had long ago announced nightfall; and I was sitting<sup id="ref3"><a href="#fn3">[3]</a></sup></em> in the company of my wife, musing on the events of the past and the
       prospects of the coming year, the coming century, the coming Millennium.</p>
 
       <p>My four Sons and two orphan Grandchildren had retired to their several
@@ -191,9 +191,10 @@
       <p class="closing">*</p> 
 
       <div class="footnotes">
+        <h1>Footnotes</h1>
         <ul>
-          <li>
-            <p>Footnote 3.  When I say "sitting," of course I do not mean any change
+          <li id="fn3">
+            <p>3 &ndash; When I say "sitting," of course I do not mean any change
             of attitude such as you in Spaceland signify by that word; for as we
             have no feet, we can no more "sit" nor "stand" (in your sense of the
             word) than one of your soles or flounders.</p>
@@ -204,11 +205,11 @@
             corresponding to the increase of volition.</p>
             
             <p>But on this, and a thousand other kindred subjects, time forbids me to
-            dwell.</p>
+            dwell. <a href="#ref3">&crarr;</a></p>
           </li>
           <li>
-            <p>Another footnote!</p>
-            <p>This is where the text for a secon footnote would fall.</p>
+            <p>Another footnote! (If such a thing existed in this chapter, which it doesn't. So let me take a second to implore you to actually read <em>all</em> of Flatland. It really is a good book! I remember reading it for the first time in middle school and being quite impressed.</p>
+            <p>And if you dig it, then I <em>really</em> recommend you try and find VAS: An Opera in Flatland; a sort of meta-followup to Flatland. Bonus: it's beautifully designed by Stephen Farrell.)</p>
           </li>
         </ul>
       </div>
