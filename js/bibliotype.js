@@ -36,6 +36,22 @@
           window.location.reload();
       });
 
+      // --------------------------------------
+      // Swipe Left to toggle grid
+      //
+      $('body').addSwipeEvents().
+        bind('swipeleft', function(evt, touch) {
+        if($('body').hasClass('bg_grid'))
+        {
+          $('body').removeClass('bg_grid');
+        }
+        else
+        {
+          $('body').addClass('bg_grid');
+        }
+      });
+
+
 
       // --------------------------------------
       // Doubletap to show / hide menu
