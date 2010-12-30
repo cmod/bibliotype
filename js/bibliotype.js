@@ -14,14 +14,14 @@
               displaytogglebox : true,
               classname: 'body_text',
               minwordlength : 4,
-              togglebox : function (hyphenate) {
+              togglebox : function () {
                         var myelem = document.getElementById('hyphenToggle');
-                        //alert(hyphenate);
-                        if (hyphenate) {
-                          myelem.style.backgroundColor = '#000000';
+                        
+                        if (Hyphenator.doHyphenation) {
+                          myelem.setAttribute("class", "highlight");
                           myelem.onclick = Hyphenator.toggleHyphenation;
                         } else {
-                          myelem.style.backgroundColor = '#ffffff';
+                          myelem.setAttribute("class", "");
                           myelem.onclick = Hyphenator.toggleHyphenation;
                         }
                 }
