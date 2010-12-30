@@ -3,8 +3,13 @@
 <head>
   <title>Bibliotype — Longform Base Typography for Tablets</title>
 
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="apple-touch-icon" sizes="72x72" href="images/ipad_icon.png" />
+  <link rel="apple-touch-startup-image" href="images/startup.png" />
+  <link rel="apple-touch-startup-image" media="screen and (orientation: landscape)" href="images/startup-land.png" />
+
 
   <link href="css/master.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
@@ -14,16 +19,17 @@
 
 </head>
 
-<body class="low georgia bg_grid">
+<body class="low georgia ragged">
 
+  <div id="menu_tab">Menu</div>
   <div id="menu_wrap">
     <menu>
-
+      <h1>Bibliotype</h1>
       <ul class="sizes">
         <li class="desc">Size</li>
         <li class="size1">bed</li>
-        <li class="size3">knee</li>
-        <li class="size5">breakfast</li>
+        <li class="size2">knee</li>
+        <li class="size3">breakfast</li>
       </ul>
 
       <ul class="text_type">
@@ -54,12 +60,22 @@
         <li class="desc">Hyphenation</li>
         <li id="hyphenToggle">Toggle</li>
       </ul>
+      <div id="menu_footer">
+        <p>More information at: <a href="http://bibliotype.org/">http://bibliotype.org/</a></p>
+      </div>
     </menu>
+  
   </div>
 
   <div id="content_container" class="knee">
 
-    <!--div class="not-tablet">note: These templates are optimized for viewing on the iPad</div-->
+    <div class="not_tablet">
+      <!--h1 class="bibliotype">Bibliotype — HTML5 templates for longform reading</h1-->
+      <div class="instructions">
+        <p class="alert">These templates are optimized for viewing on an iPad</span></p>
+      </div>
+    </div>
+    
     <header>Flatland: A Romance of Many Dimensions</header>
     <div class="body_text">
       <div id="title_block">
@@ -68,7 +84,7 @@
         <img src="images/flatland-illustration.png" alt="Flatland title illustration" />
       </div>
       
-      <p class="fp"><span class="sc">From dreams</span> I proceed to facts.</p>
+      <p class="fp">F<span class="sc">rom dreams</span> I proceed to facts.</p>
 
       <p>It was the last day of our 1999<sup>th</sup> year of our era.  The patterning of
       the rain had long ago announced nightfall; and I was sitting<sup id="ref3"><a href="#fn3">[3]</a></sup></em> in the company of my wife, musing on the events of the past and the
