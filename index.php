@@ -36,26 +36,26 @@
 
       <ul class="text_type">
         <li class="desc">Justification</li>
-        <li class="just">Justified</li>
         <li class="rag">Ragged</li>
+        <li class="just">Justified</li>
       </ul>
 
       <ul class="family">
         <li class="desc">Family</li>
-        <li class="hel">Helvetica</li>
         <li class="geo">Georgia</li>
+        <li class="hel">Helvetica</li>
       </ul>
       
       <ul class="contrast">
         <li class="desc">Contrast</li>
-        <li class="highc">High</li>
         <li class="lowc">Low</li>
+        <li class="highc">High</li>
       </ul>
       
       <ul class="grid">
         <li class="desc">Grid</li>
-        <li class="bg_on">Grid On</li>
         <li class="bg_off">Grid Off</li>
+        <li class="bg_on">Grid On</li>
       </ul>
       
       <ul class="hyphenation">
