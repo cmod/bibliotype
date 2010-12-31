@@ -8,6 +8,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <link rel="apple-touch-icon" sizes="72x72" href="images/ipad_icon.png" />
   <link rel="apple-touch-startup-image" href="images/startup.png" />
+
+  <!-- This doesn't work in landscape but wouldn't it be nice if it did? /me nudges Apple -->
   <link rel="apple-touch-startup-image" media="screen and (orientation: landscape)" href="images/startup-land.png" />
 
 

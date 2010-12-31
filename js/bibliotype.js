@@ -1,6 +1,37 @@
 /*  ---------------------------------------------------
 
-    Bibliotype Javascript handlers
+    ===========================================
+                B I B L I O T Y P E
+                         *
+           BASE BOOK / LONGFORM TYPOGRAPHY
+               FOR TABLET COMPUTERS
+    = = = = = = = = = = = = = = = = = = = = = = 
+    
+    There is nothing -- seriously, nothing (no really, nothing) -- fancy 
+    going on in here, but just to make people feel comfortable. Here's a 
+    license saying, effectively, hack away. 
+    
+    - - - - 
+    
+    Copyright (C) 2011 by Craig Mod (http://craigmod.com)
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+    
+    The above copyright notice and this permission notice shall be included in
+    all copies or substantial portions of the Software.
+    
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+    THE SOFTWARE.
 
     --------------------------------------------------- */
 
@@ -16,7 +47,6 @@
               minwordlength : 4,
               togglebox : function () {
                         var myelem = document.getElementById('hyphenToggle');
-                        
                         if (Hyphenator.doHyphenation) {
                           myelem.setAttribute("class", "highlight");
                           myelem.onclick = Hyphenator.toggleHyphenation;
@@ -93,10 +123,13 @@
       // Swipe Right to reload the page 
       // (great for quick debugging)
       //
+      
+      /*
       $('body').addSwipeEvents().
         bind('swiperight', function(evt, touch) {
           window.location.reload();
       });
+      */
 
       // --------------------------------------
       // Swipe Left to toggle grid
