@@ -189,20 +189,17 @@
       // Size toggles
       //
       $('.size1').click(function() {
-        $('#content_container').removeClass();
-        $('#content_container').addClass('bed');
+        $('#content_container').attr("class", "bed");
         menuSet();
       });
 
       $('.size2').click(function() {
-        $('#content_container').removeClass();
-        $('#content_container').addClass('knee');
+        $('#content_container').attr("class", "knee");
         menuSet();
       });
 
       $('.size3').click(function() {
-        $('#content_container').removeClass();
-        $('#content_container').addClass('breakfast');
+        $('#content_container').attr("class", "breakfast");
         menuSet();
       });
       
@@ -211,16 +208,12 @@
       // Contrast Toggles
       //
       $('.highc').click(function() {
-        $('body').removeClass('low');
-        $('body').removeClass('high');
-        $('body').addClass('high');
+        $('body').removeClass('low high').addClass('high');
         menuSet();
       });
 
       $('.lowc').click(function() {
-        $('body').removeClass('low');
-        $('body').removeClass('high');
-        $('body').addClass('low');
+        $('body').removeClass('low high').addClass('low');
         menuSet();
       });
 
@@ -229,16 +222,12 @@
       // Justification Toggles
       //
       $('.just').click(function() {
-        $('body').removeClass('ragged');
-        $('body').removeClass('justified');
-        $('body').addClass('justified');
+        $('body').removeClass('ragged justified').addClass('justified');
         menuSet();
       });
 
       $('.rag').click(function() {
-        $('body').removeClass('ragged');
-        $('body').removeClass('justified');
-        $('body').addClass('ragged');
+        $('body').removeClass('ragged justified').addClass('ragged');
         menuSet();
       });
 
@@ -247,16 +236,12 @@
       // Serif toggle
       //
       $('.hel').click(function() {
-        $('body').removeClass('helvetica');
-        $('body').removeClass('georgia');
-        $('body').addClass('helvetica');
+        $('body').removeClass('georgia helvetica').addClass('helvetica');
         menuSet();
       });
 
       $('.geo').click(function() {
-        $('body').removeClass('helvetica');
-        $('body').removeClass('georgia');
-        $('body').addClass('georgia');
+        $('body').removeClass('helvetica georgia').addClass('georgia');
         menuSet();
       });
 
@@ -264,8 +249,7 @@
       // Grid toggle
       //
       $('.bg_on').click(function() {
-        $('body').removeClass('bg_grid');
-        $('body').addClass('bg_grid');
+        $('body').removeClass('bg_grid').addClass('bg_grid');
         menuSet();
       });
 
