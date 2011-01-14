@@ -273,5 +273,34 @@
         $('body').removeClass('bg_grid');
         menuSet();
       });
+      
+      
+      // -------------------------------------
+      // Persistence
+      //
+      if('localStorage' in window && window['localStorage'] !== null){
+        var store = window.localStorage,
+            scrollPercentage = store.getItem('scrollPercentage');
+        
+        function pageHeight()
+        {
+          return $('html').height() - $('body').height();
+        };
+        
+        if(scrollPercentage) {
+          $('body').animate({scrollTop: pageHeight() * scrollPercentage });
+        }
+        
+        var settingScroll = false;
+        
+        $(window).scroll(function(){
+          if(settingScroll){
+            clearTimeout(settingScroll);
+          }
+          settingScroll = setTimeout(function(){
+            store.setItem('scrollPercentage', $('body').scrollTop()/pageHeight());
+          },100);
+        });
+      }
 
-    })
+    });
