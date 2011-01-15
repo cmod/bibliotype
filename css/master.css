@@ -205,7 +205,7 @@
       .bed #title_block img   { margin-top: 1.8em; width: 200px; }
       .georgia .bed .fp:first-letter   { font-size: 3.3em; line-height: .95em; margin-top: -.04em; margin-right: .15em; }
       .helvetica .bed .fp:first-letter { font-size: 3.3em; line-height: .95em; margin-right: .15em; }
-
+      .bed blockquote         { margin-top: 1.5em; margin-bottom: 1.5em; margin-left: 1em; margin-right: 1em; font-style: italic; color: #666; }
 
       .knee                    { width: 560px; } 
       .georgia .knee           { font-size: 1.7em; }
@@ -228,7 +228,7 @@
       .breakfast #title_block img { margin-top: 1.8em; }
       .georgia .breakfast .fp:first-letter   { font-size: 3.1em; line-height: 1em; margin-top: -.05em; margin-right: .15em; }
       .helvetica .breakfast .fp:first-letter { font-size: 3.1em; line-height: .95em; margin-right: .15em; }
-
+      .breakfast blockquote       { margin-top: 1.5em; margin-bottom: 1.5em; margin-left: 2em; margin-right: 2em; font-style: italic; color: #666; }
     }
     
     
