@@ -281,15 +281,12 @@
       //
       if('localStorage' in window && window['localStorage'] !== null){
         var store = window.localStorage,
+            pageHeight = $('body').height(),
             scrollPercentage = store.getItem('scrollPercentage');
         
-        function pageHeight()
-        {
-          return $('html').height() - $('window').height();
-        };
         
         if(scrollPercentage) {
-          $('body').animate({scrollTop: pageHeight() * scrollPercentage });
+          $('body').animate({scrollTop: pageHeight * scrollPercentage });
         }
         
         var settingScroll = false;
@@ -299,13 +296,14 @@
             clearTimeout(settingScroll);
           }
           settingScroll = setTimeout(function(){
-            scrollPercentage = $('body').scrollTop()/pageHeight();
+            scrollPercentage = $('body').scrollTop()/pageHeight;
             store.setItem('scrollPercentage', scrollPercentage); 
           },100);
         });
         
         $('menu').bind('change', function(){
-          $('body').scrollTop(pageHeight()*scrollPercentage);
+          pageHeight = $('body').height();
+          $('body').scrollTop(pageHeight*scrollPercentage);
         });
       }
 
