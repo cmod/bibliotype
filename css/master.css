@@ -152,7 +152,7 @@
     .footnotes { font-size: .7em; border-top: 1px dotted #ccc; padding-top: 2em; margin-top: 2em; color: #666; font-family: Helvetica; }
       .footnotes li { margin-bottom: 1em; }
         .footnotes li p:first-child { text-indent: 0; }
-        .footnotes li p:first-child:before { content: '¶ '; font-size: .8em; float: left; width: 10px; margin-left: 0px; }
+        .footnotes li p:first-child:before { content: '¶ '; font-size: .8em; float: left; width: 10px; }
       .footnotes li:last-child { margin-bottom: 0px; } 
       .footnotes h1 { text-transform: uppercase; font-family: Georgia; display: inline; font-size: .8em; letter-spacing: 1px; font-weight: normal; margin-bottom: 0px; padding-bottom: 0px; line-height: 1em; }
       .footnotes h4 { font-weight: bold; float: left; display: inline; }
@@ -205,7 +205,7 @@
       .bed #title_block img   { margin-top: 1.8em; width: 200px; }
       .georgia .bed .fp:first-letter   { font-size: 3.3em; line-height: .95em; margin-top: -.04em; margin-right: .15em; }
       .helvetica .bed .fp:first-letter { font-size: 3.3em; line-height: .95em; margin-right: .15em; }
-      .bed blockquote         { margin-top: 1.5em; margin-bottom: 1.5em; margin-left: 1em; margin-right: 1em; font-style: italic; color: #666; }
+      .bed blockquote         { margin: 1.5em 1em; font-style: italic; color: #666; }
 
       .knee                    { width: 560px; } 
       .georgia .knee           { font-size: 1.7em; }
@@ -228,7 +228,7 @@
       .breakfast #title_block img { margin-top: 1.8em; }
       .georgia .breakfast .fp:first-letter   { font-size: 3.1em; line-height: 1em; margin-top: -.05em; margin-right: .15em; }
       .helvetica .breakfast .fp:first-letter { font-size: 3.1em; line-height: .95em; margin-right: .15em; }
-      .breakfast blockquote       { margin-top: 1.5em; margin-bottom: 1.5em; margin-left: 2em; margin-right: 2em; font-style: italic; color: #666; }
+      .breakfast blockquote       { margin: 1.5em 2em; font-style: italic; color: #666; }
     }
     
     
@@ -316,7 +316,7 @@
       .knee #title_block       { margin-bottom: 3em; margin-top: 4em; }
       .knee #title_block img   { margin-top: 1.2em; width: 250px; }
       .knee .body              { margin-bottom: 9em; }
-      .knee blockquote         { margin-top: 1.5em; margin-bottom: 1.5em; margin-left: 1.5em; margin-right: 1.5em; font-style: italic; color: #666; }
+      .knee blockquote         { margin: 1.5em; font-style: italic; color: #666; }
       .georgia .knee .fp:first-letter   { font-size: 3.3em; line-height: .95em; margin-top: -.02em; margin-right: .15em; }
       .helvetica .knee .fp:first-letter { font-size: 3em; line-height: .95em; margin-right: .15em; }
 
@@ -330,7 +330,7 @@
       .breakfast #title_block     { margin-bottom: 2em; margin-top: 1.4em; }
       .breakfast #title_block img { margin-top: .9em; width: 300px; }
       .breakfast .body            { margin-bottom: 7em; }
-      .breakfast blockquote         { margin-top: 1.5em; margin-bottom: 1.5em; margin-left: 2em; margin-right: 2em; font-style: italic; color: #666; }
+      .breakfast blockquote       { margin: 1.5em 2em; font-style: italic; color: #666; }
       .georgia .breakfast .fp:first-letter   { font-size: 3.2em; line-height: .95em; margin-top: -.02em; margin-right: .15em; }
       .helvetica .breakfast .fp:first-letter { font-size: 3.1em; line-height: .95em; margin-right: .15em; }
     }
@@ -358,7 +358,10 @@
       border-top: 0px;
       -webkit-border-bottom-right-radius: 5px;
       -webkit-border-bottom-left-radius: 5px;
-      -webkit-box-shadow: 0 1px 2px #bbb;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px;      
+      -webkit-box-shadow: 0 1px 2px #bbb; 
+      box-shadow: 0 1px 2px #bbb;       
       z-index: 300;
       }
       
@@ -382,11 +385,15 @@
       -webkit-border-bottom-right-radius: 5px;
       -webkit-border-bottom-left-radius: 0px;
       -webkit-box-shadow: 0 2px 2px #cfcabf;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 0px;
+      box-shadow: 0 2px 2px #cfcabf;
+      
       }
       
       menu h1 { float: right; margin-bottom: 20px; margin-right: 10px; display: block; width: 255px; height: 60px; text-overflow: hidden; background: transparent url(../images/h1-bibliotype.png) top left no-repeat; text-indent: -9000px; }
       
-      menu ul { clear: both; margin: 0px auto; width: 100%; margin-left: 20px; text-align: left; }
+      menu ul { clear: both; margin: 0px auto 0 20px; width: 100%; text-align: left; }
         menu ul.contrast, menu ul.text_type, menu ul.family, menu ul.sizes, menu ul.grid { margin-bottom: 20px; } 
       
       menu li { 
@@ -399,6 +406,7 @@
         font-family: Georgia;
         padding: 5px 15px 8px 15px;
         -webkit-border-radius: 3px;
+        border-radius: 3px;
         background-color: #dfdfdf;
         text-shadow: 1px 1px 0px #dedede;
         color: #888;
